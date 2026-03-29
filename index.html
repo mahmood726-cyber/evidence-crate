@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EvidenceCrate</title>
+  <meta name="description" content="RO-Crate style packaging dashboard for the ResearchConstellation portfolio snapshot.">
+  <style>
+    :root {
+      --bg: #f3efe5;
+      --ink: #171816;
+      --muted: #585f57;
+      --line: rgba(23, 24, 22, 0.12);
+      --panel: rgba(255, 251, 244, 0.92);
+      --accent: #8b5e34;
+      --accent-2: #17443b;
+      --shadow: 0 24px 60px rgba(23, 24, 22, 0.12);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Georgia", "Palatino Linotype", serif;
+      background:
+        radial-gradient(circle at 14% 18%, rgba(139, 94, 52, 0.14), transparent 24%),
+        radial-gradient(circle at 82% 16%, rgba(23, 68, 59, 0.12), transparent 24%),
+        linear-gradient(180deg, #f8f3eb 0%, #eee5d8 100%);
+    }
+
+    main {
+      width: min(1160px, calc(100% - 28px));
+      margin: 0 auto;
+      padding: 28px 0 64px;
+    }
+
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      box-shadow: var(--shadow);
+      padding: 24px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(290px, 0.8fr);
+      gap: 18px;
+      align-items: stretch;
+    }
+
+    .eyebrow {
+      margin: 0 0 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      font-size: 0.76rem;
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    h1, h2 {
+      margin: 0;
+      line-height: 1;
+      letter-spacing: -0.04em;
+      font-weight: 700;
+    }
+
+    h1 { font-size: clamp(2.4rem, 5.4vw, 4.8rem); }
+    h2 { font-size: 1.5rem; }
+
+    p {
+      line-height: 1.7;
+      color: var(--muted);
+    }
+
+    .stat-grid,
+    .list-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .wide-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 18px;
+      margin-top: 18px;
+    }
+
+    .card {
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 16px;
+      background: rgba(255, 255, 255, 0.7);
+    }
+
+    .label {
+      display: block;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-size: 0.74rem;
+      font-weight: 700;
+      color: var(--muted);
+    }
+
+    .value {
+      display: block;
+      font-size: 2rem;
+      line-height: 1;
+      color: var(--ink);
+    }
+
+    .section { margin-top: 18px; }
+
+    .stack {
+      display: grid;
+      gap: 12px;
+      margin-top: 14px;
+    }
+
+    .row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 12px;
+      align-items: center;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .row:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .row strong {
+      display: block;
+      font-size: 1rem;
+      color: var(--ink);
+    }
+
+    .row span {
+      display: block;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .pill {
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(23, 68, 59, 0.1);
+      color: var(--accent-2);
+      font-size: 0.9rem;
+      font-weight: 700;
+      white-space: normal;
+      overflow-wrap: anywhere;
+      text-align: right;
+    }
+
+    a {
+      color: var(--accent-2);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    @media (max-width: 860px) {
+      .hero,
+      .wide-grid,
+      .stat-grid,
+      .list-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="panel hero">
+      <div>
+        <p class="eyebrow">Metadata Packaging</p>
+        <h1>EvidenceCrate</h1>
+        <p id="hero-copy">
+          A new repo-local packaging layer that recasts the ResearchConstellation snapshot as a crate-ready dataset,
+          with human-facing summaries and machine-facing metadata in the same static repository.
+        </p>
+      </div>
+      <aside class="panel" style="padding:18px">
+        <p class="eyebrow" style="margin-bottom:10px">Core Metrics</p>
+        <div class="stat-grid" id="metric-grid"></div>
+      </aside>
+    </section>
+
+    <section class="wide-grid">
+      <section class="panel">
+        <p class="eyebrow">Coverage View</p>
+        <h2>Status packaging readiness</h2>
+        <div class="stack" id="status-breakdown"></div>
+      </section>
+      <section class="panel">
+        <p class="eyebrow">Entity Mix</p>
+        <h2>What the crate packages</h2>
+        <div class="stack" id="type-breakdown"></div>
+      </section>
+    </section>
+
+    <section class="wide-grid">
+      <section class="panel">
+        <p class="eyebrow">Best Covered</p>
+        <h2>Tiers already close to clean export</h2>
+        <div class="stack" id="best-covered"></div>
+      </section>
+      <section class="panel">
+        <p class="eyebrow">Weakest Covered</p>
+        <h2>Tiers that still block clean packaging</h2>
+        <div class="stack" id="weak-covered"></div>
+      </section>
+    </section>
+
+    <section class="wide-grid">
+      <section class="panel">
+        <p class="eyebrow">Triage Queue</p>
+        <h2>Projects still lacking an explicit status</h2>
+        <div class="stack" id="triage-queue"></div>
+      </section>
+      <section class="panel">
+        <p class="eyebrow">Ready Set</p>
+        <h2>Projects with a preserved lifecycle label</h2>
+        <div class="stack" id="ready-set"></div>
+      </section>
+    </section>
+
+    <section class="panel section">
+      <p class="eyebrow">Artifacts</p>
+      <h2>What ships in the repo</h2>
+      <div class="list-grid">
+        <article class="card">
+          <span class="label">RO-Crate</span>
+          <strong>ro-crate-metadata.json</strong>
+          <p>A root dataset plus file, tier, and project entities derived from the bundled portfolio snapshot.</p>
+          <a href="ro-crate-metadata.json">Open metadata</a>
+        </article>
+        <article class="card">
+          <span class="label">CodeMeta</span>
+          <strong>codemeta.json</strong>
+          <p>A machine-readable software description for the project itself.</p>
+          <a href="codemeta.json">Open software metadata</a>
+        </article>
+        <article class="card">
+          <span class="label">Builder</span>
+          <strong>scripts/build_evidence_crate.py</strong>
+          <p>Regenerates the dashboard data, RO-Crate graph, and CodeMeta record from the repo-local snapshot.</p>
+          <a href="scripts/build_evidence_crate.py">Open builder</a>
+        </article>
+        <article class="card">
+          <span class="label">E156 bundle</span>
+          <strong>e156-submission/</strong>
+          <p>The micro-paper, protocol, and reader page for publication-facing review.</p>
+          <a href="e156-submission/index.html">Open E156 reader</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <script src="data.js"></script>
+  <script>
+    const data = window.EVIDENCE_CRATE_DATA;
+
+    function card(label, value) {
+      return '<div class="card"><span class="label">' + label + '</span><span class="value">' + value + '</span></div>';
+    }
+
+    function listRow(title, subtitle, value) {
+      return '<div class="row"><div><strong>' + title + '</strong><span>' + subtitle + '</span></div><span class="pill">' + value + '</span></div>';
+    }
+
+    document.getElementById('metric-grid').innerHTML = [
+      card('Tracked', data.metrics.trackedProjects),
+      card('Tiers', data.metrics.tierCount),
+      card('Coverage', data.metrics.explicitCoveragePercent + '%'),
+      card('Graph nodes', data.metrics.crateGraphNodes)
+    ].join('');
+
+    document.getElementById('status-breakdown').innerHTML = data.statusBreakdown.map(function(item) {
+      return listRow(item.label, 'Projects carrying this lifecycle signal', item.count);
+    }).join('');
+
+    document.getElementById('type-breakdown').innerHTML = data.typeBreakdown.map(function(item) {
+      return listRow(item.type, 'Packaged as a project entity class', item.count);
+    }).join('');
+
+    document.getElementById('best-covered').innerHTML = data.highlights.bestCoveredTiers.map(function(item) {
+      return listRow(item.name, item.statusSummary, item.coveragePercent + '%');
+    }).join('');
+
+    document.getElementById('weak-covered').innerHTML = data.highlights.weakestCoveredTiers.map(function(item) {
+      return listRow(item.name, item.statusSummary, item.needsTriage + ' triage');
+    }).join('');
+
+    document.getElementById('triage-queue').innerHTML = data.highlights.triageQueue.map(function(item) {
+      return listRow(item.name, item.tier + ' | ' + item.type, item.path);
+    }).join('');
+
+    document.getElementById('ready-set').innerHTML = data.highlights.readySet.map(function(item) {
+      return listRow(item.name, item.tier + ' | ' + item.status, item.path);
+    }).join('');
+  </script>
+</body>
+</html>

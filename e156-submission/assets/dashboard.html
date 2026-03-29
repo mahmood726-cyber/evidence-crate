@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EvidenceCrate Dashboard Handoff</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Georgia", "Palatino Linotype", serif;
+      color: #171816;
+      background: linear-gradient(180deg, #f8f3eb 0%, #eee5d8 100%);
+    }
+
+    main {
+      width: min(820px, calc(100% - 28px));
+      margin: 0 auto;
+      padding: 32px 0 56px;
+    }
+
+    .panel {
+      background: rgba(255, 251, 244, 0.94);
+      border: 1px solid rgba(23, 24, 22, 0.12);
+      border-radius: 24px;
+      padding: 24px;
+      box-shadow: 0 24px 60px rgba(23, 24, 22, 0.12);
+    }
+
+    h1, h2 {
+      margin: 0;
+      line-height: 1.04;
+    }
+
+    h1 { font-size: clamp(2rem, 5vw, 3.6rem); }
+    h2 { font-size: 1.2rem; margin-top: 20px; }
+
+    p { line-height: 1.7; color: #585f57; }
+
+    .links {
+      display: grid;
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    a {
+      display: block;
+      padding: 14px 16px;
+      border-radius: 16px;
+      background: rgba(23, 68, 59, 0.08);
+      color: #17443b;
+      text-decoration: none;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="panel">
+      <h1>EvidenceCrate</h1>
+      <p>
+        This handoff page keeps the E156 bundle small while still pointing directly to the working dashboard
+        and the core packaging artifacts.
+      </p>
+      <h2>Open</h2>
+      <div class="links">
+        <a href="../../index.html">Root dashboard</a>
+        <a href="../../ro-crate-metadata.json">RO-Crate metadata</a>
+        <a href="../../codemeta.json">CodeMeta record</a>
+        <a href="../../data.json">Derived dashboard data</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

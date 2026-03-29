@@ -1,0 +1,3359 @@
+{
+  "@context": "https://w3id.org/ro/crate/1.1/context",
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "about": {
+        "@id": "./"
+      },
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.1"
+      },
+      "name": "EvidenceCrate metadata"
+    },
+    {
+      "@id": "./",
+      "@type": "Dataset",
+      "name": "EvidenceCrate",
+      "description": "A repo-local packaging layer that repackages the ResearchConstellation portfolio snapshot into RO-Crate style metadata, summary JSON, and a static dashboard.",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "datePublished": "2026-03-29",
+      "dateModified": "2026-03-29",
+      "creator": {
+        "@id": "#author"
+      },
+      "hasPart": [
+        {
+          "@id": "data-source/portfolio-data.snapshot.json"
+        },
+        {
+          "@id": "scripts/build_evidence_crate.py"
+        },
+        {
+          "@id": "data.json"
+        },
+        {
+          "@id": "index.html"
+        },
+        {
+          "@id": "e156-submission/index.html"
+        },
+        {
+          "@id": "codemeta.json"
+        },
+        {
+          "@id": "#tier-tier-1"
+        },
+        {
+          "@id": "#tier-tier-2"
+        },
+        {
+          "@id": "#tier-tier-3"
+        },
+        {
+          "@id": "#tier-tier-4"
+        },
+        {
+          "@id": "#tier-tier-5"
+        },
+        {
+          "@id": "#tier-tier-6"
+        },
+        {
+          "@id": "#tier-tier-7"
+        },
+        {
+          "@id": "#tier-tier-8"
+        },
+        {
+          "@id": "#tier-tier-9"
+        },
+        {
+          "@id": "#tier-tier-10"
+        },
+        {
+          "@id": "#tier-tier-11"
+        },
+        {
+          "@id": "#tier-tier-12"
+        },
+        {
+          "@id": "#project-6-adaptsim"
+        },
+        {
+          "@id": "#project-4-al-mizan"
+        },
+        {
+          "@id": "#project-5-bias-forensics"
+        },
+        {
+          "@id": "#project-1-cardiooracle"
+        },
+        {
+          "@id": "#project-7-clinic-website"
+        },
+        {
+          "@id": "#project-2-fragility-atlas"
+        },
+        {
+          "@id": "#project-3-metareproducer"
+        },
+        {
+          "@id": "#project-68-3dvitreous-grapher"
+        },
+        {
+          "@id": "#project-63-asa"
+        },
+        {
+          "@id": "#project-73a-asa"
+        },
+        {
+          "@id": "#project-109-bayesian-ma"
+        },
+        {
+          "@id": "#project-107-benfordma"
+        },
+        {
+          "@id": "#project-103-component-nma"
+        },
+        {
+          "@id": "#project-66-ctgov-search-strategies"
+        },
+        {
+          "@id": "#project-67-cv-rct-analysis"
+        },
+        {
+          "@id": "#project-108-evidence-half-life"
+        },
+        {
+          "@id": "#project-105-evidencequality-concordance"
+        },
+        {
+          "@id": "#project-73f-living-ma-engine"
+        },
+        {
+          "@id": "#project-69-livingmeta-watchman"
+        },
+        {
+          "@id": "#project-106-ma-power"
+        },
+        {
+          "@id": "#project-110-ma-workbench"
+        },
+        {
+          "@id": "#project-113-meta-regression"
+        },
+        {
+          "@id": "#project-65-metaextract"
+        },
+        {
+          "@id": "#project-79-metaguard"
+        },
+        {
+          "@id": "#project-80-metamethods"
+        },
+        {
+          "@id": "#project-108a-metashift"
+        },
+        {
+          "@id": "#project-73-minireview"
+        },
+        {
+          "@id": "#project-73d-new-app"
+        },
+        {
+          "@id": "#project-73b-oman"
+        },
+        {
+          "@id": "#project-70-pfa-af-livingmeta"
+        },
+        {
+          "@id": "#project-112-pooling-suite"
+        },
+        {
+          "@id": "#project-73e-portfolio-site"
+        },
+        {
+          "@id": "#project-107-prisma-checker"
+        },
+        {
+          "@id": "#project-111-pub-bias-suite"
+        },
+        {
+          "@id": "#project-72-rayyanreplacement"
+        },
+        {
+          "@id": "#project-104-rmst-meta"
+        },
+        {
+          "@id": "#project-102-rob-assessor"
+        },
+        {
+          "@id": "#project-73c-superapp"
+        },
+        {
+          "@id": "#project-64-trialradar"
+        },
+        {
+          "@id": "#project-71-tricuspid-teer"
+        },
+        {
+          "@id": "#project-76-childnajia"
+        },
+        {
+          "@id": "#project-74-clinic-site"
+        },
+        {
+          "@id": "#project-75-private-website"
+        },
+        {
+          "@id": "#project-78-stories"
+        },
+        {
+          "@id": "#project-77-waternajia"
+        },
+        {
+          "@id": "#project-97-advanced-nma-pooling"
+        },
+        {
+          "@id": "#project-102-claude-plugins"
+        },
+        {
+          "@id": "#project-101-claude-rct-work"
+        },
+        {
+          "@id": "#project-85-esc-acs-living-meta"
+        },
+        {
+          "@id": "#project-93-everything-claude-code"
+        },
+        {
+          "@id": "#project-80-evidence-inference"
+        },
+        {
+          "@id": "#project-91-experimental-meta-analysis"
+        },
+        {
+          "@id": "#project-104-glm-code"
+        },
+        {
+          "@id": "#project-83-hfpef-registry-calibration"
+        },
+        {
+          "@id": "#project-82-hfpef-registry-synth"
+        },
+        {
+          "@id": "#project-92-idea12"
+        },
+        {
+          "@id": "#project-94-ipd-meta-pro-link"
+        },
+        {
+          "@id": "#project-95-ipd-qma-project"
+        },
+        {
+          "@id": "#project-81-llm-meta-analysis"
+        },
+        {
+          "@id": "#project-88-mafi"
+        },
+        {
+          "@id": "#project-89-mafi-continuation"
+        },
+        {
+          "@id": "#project-90-maxent-reconstructor"
+        },
+        {
+          "@id": "#project-79-meta-epidemiology-bias-correction"
+        },
+        {
+          "@id": "#project-100-metafusion-lab"
+        },
+        {
+          "@id": "#project-86-metanew"
+        },
+        {
+          "@id": "#project-87-mlm501"
+        },
+        {
+          "@id": "#project-103-multipledatameta"
+        },
+        {
+          "@id": "#project-96-prognostic-meta"
+        },
+        {
+          "@id": "#project-84-registry-first-rct-meta"
+        },
+        {
+          "@id": "#project-99-surronma"
+        },
+        {
+          "@id": "#project-98-tower"
+        },
+        {
+          "@id": "#project-13-dose-response-nma"
+        },
+        {
+          "@id": "#project-10-dta-pro"
+        },
+        {
+          "@id": "#project-11-hta-artifact-standard"
+        },
+        {
+          "@id": "#project-9-ipd-meta-pro"
+        },
+        {
+          "@id": "#project-15-living-meta"
+        },
+        {
+          "@id": "#project-12-nma-apps"
+        },
+        {
+          "@id": "#project-14-pairwise-ai"
+        },
+        {
+          "@id": "#project-8-truthcert-pairwisepro"
+        },
+        {
+          "@id": "#project-21-finrenone-rapidmeta"
+        },
+        {
+          "@id": "#project-16-metasprint-autopilot"
+        },
+        {
+          "@id": "#project-20-metasprint-cardio-universe"
+        },
+        {
+          "@id": "#project-19-metasprint-dose-response"
+        },
+        {
+          "@id": "#project-17-metasprint-dta"
+        },
+        {
+          "@id": "#project-18-metasprint-nma"
+        },
+        {
+          "@id": "#project-23-501mlm"
+        },
+        {
+          "@id": "#project-37b-501mlm-submission"
+        },
+        {
+          "@id": "#project-24-cres"
+        },
+        {
+          "@id": "#project-28-grma"
+        },
+        {
+          "@id": "#project-26-gwam"
+        },
+        {
+          "@id": "#project-22-heterogeneityase"
+        },
+        {
+          "@id": "#project-25-ipd-qma"
+        },
+        {
+          "@id": "#project-37a-lfa-cbamm"
+        },
+        {
+          "@id": "#project-27-mem-meta-ecosystem"
+        },
+        {
+          "@id": "#project-30-metaoverfit"
+        },
+        {
+          "@id": "#project-37c-metaoverfit-paper"
+        },
+        {
+          "@id": "#project-33-metaverse-robust-ma"
+        },
+        {
+          "@id": "#project-34-mlmresearch"
+        },
+        {
+          "@id": "#project-35-paper1-cbamm"
+        },
+        {
+          "@id": "#project-36-paper2"
+        },
+        {
+          "@id": "#project-31-pub-bias-simulation"
+        },
+        {
+          "@id": "#project-32-rmstnma"
+        },
+        {
+          "@id": "#project-29-synthesis-fatiha"
+        },
+        {
+          "@id": "#project-106-ubcma"
+        },
+        {
+          "@id": "#project-37-wasserstein"
+        },
+        {
+          "@id": "#project-39-causalsynth"
+        },
+        {
+          "@id": "#project-40d-evidencegapmap"
+        },
+        {
+          "@id": "#project-40-mapriors"
+        },
+        {
+          "@id": "#project-38-multiversema"
+        },
+        {
+          "@id": "#project-40a-outcomereportingbias"
+        },
+        {
+          "@id": "#project-40b-overlapdetector"
+        },
+        {
+          "@id": "#project-40c-predictiongap"
+        },
+        {
+          "@id": "#project-43-cochranedataextractor"
+        },
+        {
+          "@id": "#project-44-dataextractor"
+        },
+        {
+          "@id": "#project-48-dta70"
+        },
+        {
+          "@id": "#project-45-kmcurve"
+        },
+        {
+          "@id": "#project-42-pairwise70"
+        },
+        {
+          "@id": "#project-41-rct-extractor-v2"
+        },
+        {
+          "@id": "#project-46-repo100"
+        },
+        {
+          "@id": "#project-47-repo300-enma-snma"
+        },
+        {
+          "@id": "#project-54-autograde"
+        },
+        {
+          "@id": "#project-49-hta-evidence-integrity"
+        },
+        {
+          "@id": "#project-53-hta-oman"
+        },
+        {
+          "@id": "#project-50-hta-transportability"
+        },
+        {
+          "@id": "#project-52-hta-unified-intel"
+        },
+        {
+          "@id": "#project-51-value-based-hta"
+        },
+        {
+          "@id": "#project-56-fatiha-course"
+        },
+        {
+          "@id": "#project-57-fatiha-course-v2"
+        },
+        {
+          "@id": "#project-55-synthesis-course"
+        },
+        {
+          "@id": "#project-59-burhan"
+        },
+        {
+          "@id": "#project-60-ipd-zahid"
+        },
+        {
+          "@id": "#project-58-shahzaib-icu"
+        },
+        {
+          "@id": "#project-61-worldipd"
+        },
+        {
+          "@id": "#project-62-worldipd-private"
+        }
+      ],
+      "variableMeasured": [
+        "trackedProjects",
+        "tierCount",
+        "statusLabeled",
+        "needsTriage",
+        "explicitCoveragePercent"
+      ],
+      "measurementTechnique": "Snapshot-first packaging from data-source/INDEX.snapshot.md into RO-Crate style metadata."
+    },
+    {
+      "@id": "#author",
+      "@type": "Person",
+      "name": "Mahmood Ahmad"
+    },
+    {
+      "@id": "#builder",
+      "@type": [
+        "SoftwareApplication",
+        "CreativeWork"
+      ],
+      "name": "build_evidence_crate.py",
+      "programmingLanguage": "Python",
+      "creator": {
+        "@id": "#author"
+      }
+    },
+    {
+      "@id": "data-source/portfolio-data.snapshot.json",
+      "@type": "File",
+      "name": "Bundled ResearchConstellation portfolio snapshot",
+      "encodingFormat": "application/json"
+    },
+    {
+      "@id": "scripts/build_evidence_crate.py",
+      "@type": "SoftwareSourceCode",
+      "name": "EvidenceCrate builder",
+      "encodingFormat": "text/x-python"
+    },
+    {
+      "@id": "data.json",
+      "@type": "File",
+      "name": "Derived dashboard data",
+      "encodingFormat": "application/json"
+    },
+    {
+      "@id": "index.html",
+      "@type": "File",
+      "name": "Static dashboard",
+      "encodingFormat": "text/html"
+    },
+    {
+      "@id": "e156-submission/index.html",
+      "@type": "File",
+      "name": "E156 reader",
+      "encodingFormat": "text/html"
+    },
+    {
+      "@id": "codemeta.json",
+      "@type": "File",
+      "name": "CodeMeta description",
+      "encodingFormat": "application/json"
+    },
+    {
+      "@id": "#tier-tier-1",
+      "@type": "Collection",
+      "name": "Tier 1 \u2014 Flagship Projects (active or near-submission)",
+      "description": "Flagship work close to paper conversion or major validation milestones.",
+      "size": 7,
+      "keywords": [
+        "Tier 1",
+        "portfolio tier"
+      ]
+    },
+    {
+      "@id": "#tier-tier-2",
+      "@type": "Collection",
+      "name": "Tier 2 \u2014 HTML Apps Portfolio",
+      "description": "Browser-based evidence synthesis apps with publication-facing companions.",
+      "size": 8,
+      "keywords": [
+        "Tier 2",
+        "portfolio tier"
+      ]
+    },
+    {
+      "@id": "#tier-tier-3",
+      "@type": "Collection",
+      "name": "Tier 3 \u2014 MetaSprint Family (C:\\Projects\\)",
+      "description": "MetaSprint product family spanning automation and multiple evidence modes.",
+      "size": 6,
+      "keywords": [
+        "Tier 3",
+        "portfolio tier"
+      ]
+    },
+    {
+      "@id": "#tier-tier-4",
+      "@type": "Collection",
+      "name": "Tier 4 \u2014 R Packages & Methods Papers",
+      "description": "Packages and methods papers with strong manuscript and validation depth.",
+      "size": 20,
+      "keywords": [
+        "Tier 4",
+        "portfolio tier"
+      ]
+    },
+    {
+      "@id": "#tier-tier-5",
+      "@type": "Collection",
+      "name": "Tier 5 \u2014 Cutting-Edge MA Trio + New Root-Level Methods (2026-03-24/25)",
+      "description": "New frontier methods and root-level projects still being sequenced.",
+      "size": 7,
+      "keywords": [
+        "Tier 5",
+        "portfolio tier"
+      ]
+    },
+    {
+      "@id": "#tier-tier-6",
+      "@type": "Collection",
+      "name": "Tier 6 \u2014 Infrastructure & Datasets",
+      "description": "Extraction, datasets, and ingestion infrastructure feeding downstream work.",
+      "size": 8,
+      "keywords": [
+        "Tier 6",
+        "portfolio tier"
+      ]
+    },
+    {
+      "@id": "#tier-tier-7",
+      "@type": "Collection",
+      "name": "Tier 7 \u2014 HTA Suite",
+      "description": "HTA and value frameworks that sit downstream from synthesis engines.",
+      "size": 6,
+      "keywords": [
+        "Tier 7",
+        "portfolio tier"
+      ]
+    },
+    {
+      "@id": "#tier-tier-8",
+      "@type": "Collection",
+      "name": "Tier 8 \u2014 Educational & Course Material",
+      "description": "Educational assets and teaching material rather than production apps.",
+      "size": 3,
+      "keywords": [
+        "Tier 8",
+        "portfolio tier"
+      ]
+    },
+    {
+      "@id": "#tier-tier-9",
+      "@type": "Collection",
+      "name": "Tier 9 \u2014 Collaborative & External",
+      "description": "Collaborative or external-facing projects with mixed ownership and timing.",
+      "size": 5,
+      "keywords": [
+        "Tier 9",
+        "portfolio tier"
+      ]
+    },
+    {
+      "@id": "#tier-tier-10",
+      "@type": "Collection",
+      "name": "Tier 10 \u2014 Smaller / Standalone Apps",
+      "description": "Standalone apps and methods utilities that widen the portfolio surface.",
+      "size": 33,
+      "keywords": [
+        "Tier 10",
+        "portfolio tier"
+      ]
+    },
+    {
+      "@id": "#tier-tier-11",
+      "@type": "Collection",
+      "name": "Tier 11 \u2014 Website & Non-Academic",
+      "description": "Website and non-academic projects outside the core methods lane.",
+      "size": 5,
+      "keywords": [
+        "Tier 11",
+        "portfolio tier"
+      ]
+    },
+    {
+      "@id": "#tier-tier-12",
+      "@type": "Collection",
+      "name": "Tier 12 \u2014 Research Projects (C:\\Projects\\, various)",
+      "description": "Backlog and exploratory research projects requiring clearer prioritisation.",
+      "size": 26,
+      "keywords": [
+        "Tier 12",
+        "portfolio tier"
+      ]
+    },
+    {
+      "@id": "#project-6-adaptsim",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "AdaptSim",
+      "identifier": "C:\\AdaptSim\\",
+      "description": "Type: HTML app | Lines/Tests: 2,926 / \u2014 | Target Journal: Lancet Digital Health + F1000",
+      "additionalType": "HTML app",
+      "creativeWorkStatus": "Submission ready",
+      "isPartOf": {
+        "@id": "#tier-tier-1"
+      },
+      "keywords": [
+        "Tier 1",
+        "HTML app",
+        "Submission ready"
+      ]
+    },
+    {
+      "@id": "#project-4-al-mizan",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "Al-Mizan",
+      "identifier": "C:\\AlMizan\\",
+      "description": "Type: HTML app | Lines/Tests: 2,534 / \u2014 | Target Journal: BMJ Evidence-Based Medicine",
+      "additionalType": "HTML app",
+      "creativeWorkStatus": "Submission ready",
+      "isPartOf": {
+        "@id": "#tier-tier-1"
+      },
+      "keywords": [
+        "Tier 1",
+        "HTML app",
+        "Submission ready"
+      ]
+    },
+    {
+      "@id": "#project-5-bias-forensics",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "Bias Forensics",
+      "identifier": "C:\\BiasForensics\\",
+      "description": "Type: Python pipeline | Lines/Tests: 307 reviews / \u2014 | Target Journal: Research Synthesis Methods",
+      "additionalType": "Python pipeline",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-1"
+      },
+      "keywords": [
+        "Tier 1",
+        "Python pipeline",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-1-cardiooracle",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "CardioOracle",
+      "identifier": "C:\\Models\\CardioOracle\\",
+      "description": "Type: HTML app | Lines/Tests: ~15K / \u2014 | Target Journal: Lancet Digital Health",
+      "additionalType": "HTML app",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-1"
+      },
+      "keywords": [
+        "Tier 1",
+        "HTML app",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-7-clinic-website",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "Clinic Website",
+      "identifier": "C:\\Projects\\clinic-site\\",
+      "description": "Type: Static site | Lines/Tests: 445 / \u2014",
+      "additionalType": "Static site",
+      "creativeWorkStatus": "Shipped",
+      "isPartOf": {
+        "@id": "#tier-tier-1"
+      },
+      "keywords": [
+        "Tier 1",
+        "Static site",
+        "Shipped"
+      ]
+    },
+    {
+      "@id": "#project-2-fragility-atlas",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "Fragility Atlas",
+      "identifier": "C:\\FragilityAtlas\\",
+      "description": "Type: Pipeline+Dashboard | Lines/Tests: 399K specs / 15 tests | Target Journal: BMJ",
+      "additionalType": "Pipeline+Dashboard",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-1"
+      },
+      "keywords": [
+        "Tier 1",
+        "Pipeline+Dashboard",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-3-metareproducer",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "MetaReproducer",
+      "identifier": "C:\\Models\\MetaReproducer\\",
+      "description": "Type: Python pipeline+HTML | Lines/Tests: 8 modules / 98 tests | Target Journal: BMJ",
+      "additionalType": "Python pipeline+HTML",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-1"
+      },
+      "keywords": [
+        "Tier 1",
+        "Python pipeline+HTML",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-68-3dvitreous-grapher",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "3dvitreous-grapher",
+      "identifier": "C:\\Projects\\3dvitreous-grapher\\",
+      "description": "Indexed without an additional detail column.",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-10"
+      },
+      "keywords": [
+        "Tier 10",
+        "Project",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-63-asa",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "Asa",
+      "identifier": "C:\\Models\\Asa\\",
+      "description": "Indexed without an additional detail column.",
+      "additionalType": "Model",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-10"
+      },
+      "keywords": [
+        "Tier 10",
+        "Model",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-73a-asa",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "Asa",
+      "identifier": "C:\\Models\\Asa\\",
+      "description": "Indexed without an additional detail column.",
+      "additionalType": "Model",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-10"
+      },
+      "keywords": [
+        "Tier 10",
+        "Model",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-109-bayesian-ma",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "Bayesian MA",
+      "identifier": "C:\\Models\\BayesianMA\\",
+      "description": "Indexed without an additional detail column.",
+      "additionalType": "Model",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-10"
+      },
+      "keywords": [
+        "Tier 10",
+        "Model",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-107-benfordma",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "BenfordMA",
+      "identifier": "C:\\BenfordMA\\",
+      "description": "Indexed without an additional detail column.",
+      "additionalType": "Root-level project",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-10"
+      },
+      "keywords": [
+        "Tier 10",
+        "Root-level project",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-103-component-nma",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "Component NMA",
+      "identifier": "C:\\Models\\ComponentNMA\\",
+      "description": "Indexed without an additional detail column.",
+      "additionalType": "Model",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-10"
+      },
+      "keywords": [
+        "Tier 10",
+        "Model",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-66-ctgov-search-strategies",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "ctgov-search-strategies",
+      "identifier": "C:\\Projects\\ctgov-search-strategies\\",
+      "description": "Indexed without an additional detail column.",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-10"
+      },
+      "keywords": [
+        "Tier 10",
+        "Project",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-67-cv-rct-analysis",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "cv-rct-analysis",
+      "identifier": "C:\\Projects\\cv-rct-analysis\\",
+      "description": "Indexed without an additional detail column.",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-10"
+      },
+      "keywords": [
+        "Tier 10",
+        "Project",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-108-evidence-half-life",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "Evidence Half-Life",
+      "identifier": "C:\\EvidenceHalfLife\\",
+      "description": "Indexed without an additional detail column.",
+      "additionalType": "Root-level project",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-10"
+      },
+      "keywords": [
+        "Tier 10",
+        "Root-level project",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-105-evidencequality-concordance",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "EvidenceQuality (Concordance)",
+      "identifier": "C:\\EvidenceQuality\\",
+      "description": "Indexed without an additional detail column.",
+      "additionalType": "Root-level project",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-10"
+      },
+      "keywords": [
+        "Tier 10",
+        "Root-level project",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-73f-living-ma-engine",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "Living MA Engine",
+      "identifier": "C:\\Projects\\living-meta-engine\\",
+      "description": "Indexed without an additional detail column.",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-10"
+      },
+      "keywords": [
+        "Tier 10",
+        "Project",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-69-livingmeta-watchman",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "LivingMeta Watchman",
+      "identifier": "C:\\Projects\\LivingMeta_Watchman_Amulet\\",
+      "description": "Indexed without an additional detail column.",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-10"
+      },
+      "keywords": [
+        "Tier 10",
+        "Project",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-106-ma-power",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "MA Power",
+      "identifier": "C:\\Models\\MAPowerCalc\\",
+      "description": "Indexed without an additional detail column.",
+      "additionalType": "Model",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-10"
+      },
+      "keywords": [
+        "Tier 10",
+        "Model",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-110-ma-workbench",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "MA Workbench",
+      "identifier": "C:\\Models\\MAWorkbench\\",
+      "description": "Indexed without an additional detail column.",
+      "additionalType": "Model",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-10"
+      },
+      "keywords": [
+        "Tier 10",
+        "Model",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-113-meta-regression",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "Meta-Regression",
+      "identifier": "C:\\Models\\MetaRegression\\",
+      "description": "Indexed without an additional detail column.",
+      "additionalType": "Model",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-10"
+      },
+      "keywords": [
+        "Tier 10",
+        "Model",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-65-metaextract",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "MetaExtract",
+      "identifier": "C:\\Projects\\MetaExtract\\",
+      "description": "Indexed without an additional detail column.",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-10"
+      },
+      "keywords": [
+        "Tier 10",
+        "Project",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-79-metaguard",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "MetaGuard",
+      "identifier": "C:\\Models\\MetaGuard\\",
+      "description": "Indexed without an additional detail column.",
+      "additionalType": "Model",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-10"
+      },
+      "keywords": [
+        "Tier 10",
+        "Model",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-80-metamethods",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "MetaMethods",
+      "identifier": "C:\\Models\\MetaMethods\\",
+      "description": "Indexed without an additional detail column.",
+      "additionalType": "Model",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-10"
+      },
+      "keywords": [
+        "Tier 10",
+        "Model",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-108a-metashift",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "MetaShift",
+      "identifier": "C:\\MetaShift\\",
+      "description": "Indexed without an additional detail column.",
+      "additionalType": "Root-level project",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-10"
+      },
+      "keywords": [
+        "Tier 10",
+        "Root-level project",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-73-minireview",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "minireview",
+      "identifier": "C:\\Projects\\minireview\\",
+      "description": "Indexed without an additional detail column.",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-10"
+      },
+      "keywords": [
+        "Tier 10",
+        "Project",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-73d-new-app",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "new-app",
+      "identifier": "C:\\Projects\\new-app\\",
+      "description": "Indexed without an additional detail column.",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-10"
+      },
+      "keywords": [
+        "Tier 10",
+        "Project",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-73b-oman",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "oman",
+      "identifier": "C:\\Projects\\oman\\",
+      "description": "Indexed without an additional detail column.",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-10"
+      },
+      "keywords": [
+        "Tier 10",
+        "Project",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-70-pfa-af-livingmeta",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "PFA AF LivingMeta",
+      "identifier": "C:\\Projects\\PFA_AF_LivingMeta\\",
+      "description": "Indexed without an additional detail column.",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-10"
+      },
+      "keywords": [
+        "Tier 10",
+        "Project",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-112-pooling-suite",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "Pooling Suite",
+      "identifier": "C:\\Models\\PoolingSuite\\",
+      "description": "Indexed without an additional detail column.",
+      "additionalType": "Model",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-10"
+      },
+      "keywords": [
+        "Tier 10",
+        "Model",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-73e-portfolio-site",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "Portfolio Site",
+      "identifier": "C:\\Projects\\portfolio-site\\",
+      "description": "Indexed without an additional detail column.",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-10"
+      },
+      "keywords": [
+        "Tier 10",
+        "Project",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-107-prisma-checker",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "PRISMA Checker",
+      "identifier": "C:\\Models\\PRISMAChecker\\",
+      "description": "Indexed without an additional detail column.",
+      "additionalType": "Model",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-10"
+      },
+      "keywords": [
+        "Tier 10",
+        "Model",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-111-pub-bias-suite",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "Pub Bias Suite",
+      "identifier": "C:\\Models\\PubBiasSuite\\",
+      "description": "Indexed without an additional detail column.",
+      "additionalType": "Model",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-10"
+      },
+      "keywords": [
+        "Tier 10",
+        "Model",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-72-rayyanreplacement",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "rayyanreplacement",
+      "identifier": "C:\\Projects\\rayyanreplacement\\",
+      "description": "Indexed without an additional detail column.",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-10"
+      },
+      "keywords": [
+        "Tier 10",
+        "Project",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-104-rmst-meta",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "RMST Meta",
+      "identifier": "C:\\RMSTmeta\\",
+      "description": "Indexed without an additional detail column.",
+      "additionalType": "Root-level project",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-10"
+      },
+      "keywords": [
+        "Tier 10",
+        "Root-level project",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-102-rob-assessor",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "RoB Assessor",
+      "identifier": "C:\\Models\\RoBAssessor\\",
+      "description": "Indexed without an additional detail column.",
+      "additionalType": "Model",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-10"
+      },
+      "keywords": [
+        "Tier 10",
+        "Model",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-73c-superapp",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "superapp",
+      "identifier": "C:\\Projects\\superapp\\",
+      "description": "Indexed without an additional detail column.",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-10"
+      },
+      "keywords": [
+        "Tier 10",
+        "Project",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-64-trialradar",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "TrialRadar",
+      "identifier": "C:\\Projects\\TrialRadar\\",
+      "description": "Indexed without an additional detail column.",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Review",
+      "isPartOf": {
+        "@id": "#tier-tier-10"
+      },
+      "keywords": [
+        "Tier 10",
+        "Project",
+        "Review"
+      ]
+    },
+    {
+      "@id": "#project-71-tricuspid-teer",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "Tricuspid TEER",
+      "identifier": "C:\\Projects\\Tricuspid_TEER_LivingMeta\\",
+      "description": "Indexed without an additional detail column.",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-10"
+      },
+      "keywords": [
+        "Tier 10",
+        "Project",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-76-childnajia",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "childnajia",
+      "identifier": "C:\\Projects\\childnajia\\",
+      "description": "Indexed without an additional detail column.",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-11"
+      },
+      "keywords": [
+        "Tier 11",
+        "Project",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-74-clinic-site",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "Clinic Site",
+      "identifier": "C:\\Projects\\clinic-site\\",
+      "description": "Indexed without an additional detail column.",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Shipped",
+      "isPartOf": {
+        "@id": "#tier-tier-11"
+      },
+      "keywords": [
+        "Tier 11",
+        "Project",
+        "Shipped"
+      ]
+    },
+    {
+      "@id": "#project-75-private-website",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "Private Website",
+      "identifier": "C:\\Projects\\private-website\\",
+      "description": "Indexed without an additional detail column.",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-11"
+      },
+      "keywords": [
+        "Tier 11",
+        "Project",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-78-stories",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "Stories",
+      "identifier": "C:\\Projects\\Stories\\",
+      "description": "Indexed without an additional detail column.",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-11"
+      },
+      "keywords": [
+        "Tier 11",
+        "Project",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-77-waternajia",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "waternajia",
+      "identifier": "C:\\Projects\\waternajia\\",
+      "description": "Indexed without an additional detail column.",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-11"
+      },
+      "keywords": [
+        "Tier 11",
+        "Project",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-97-advanced-nma-pooling",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "advanced-nma-pooling",
+      "identifier": "C:\\Projects\\",
+      "description": "Git: Y",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-12"
+      },
+      "keywords": [
+        "Tier 12",
+        "Project",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-102-claude-plugins",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "claude-plugins",
+      "identifier": "C:\\Projects\\",
+      "description": "Git: N",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-12"
+      },
+      "keywords": [
+        "Tier 12",
+        "Project",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-101-claude-rct-work",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "claude-rct-work",
+      "identifier": "C:\\Projects\\",
+      "description": "Git: N",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-12"
+      },
+      "keywords": [
+        "Tier 12",
+        "Project",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-85-esc-acs-living-meta",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "esc-acs-living-meta",
+      "identifier": "C:\\Projects\\",
+      "description": "Git: N",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-12"
+      },
+      "keywords": [
+        "Tier 12",
+        "Project",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-93-everything-claude-code",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "everything-claude-code",
+      "identifier": "C:\\Projects\\",
+      "description": "Git: Y",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-12"
+      },
+      "keywords": [
+        "Tier 12",
+        "Project",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-80-evidence-inference",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "evidence-inference",
+      "identifier": "C:\\Projects\\",
+      "description": "Git: Y",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-12"
+      },
+      "keywords": [
+        "Tier 12",
+        "Project",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-91-experimental-meta-analysis",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "experimental-meta-analysis",
+      "identifier": "C:\\Projects\\",
+      "description": "Git: N",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-12"
+      },
+      "keywords": [
+        "Tier 12",
+        "Project",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-104-glm-code",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "glm-code",
+      "identifier": "C:\\Projects\\",
+      "description": "Git: N",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-12"
+      },
+      "keywords": [
+        "Tier 12",
+        "Project",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-83-hfpef-registry-calibration",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "hfpef_registry_calibration",
+      "identifier": "C:\\Projects\\",
+      "description": "Git: N",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-12"
+      },
+      "keywords": [
+        "Tier 12",
+        "Project",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-82-hfpef-registry-synth",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "hfpef_registry_synth",
+      "identifier": "C:\\Projects\\",
+      "description": "Git: Y",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-12"
+      },
+      "keywords": [
+        "Tier 12",
+        "Project",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-92-idea12",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "idea12",
+      "identifier": "C:\\Projects\\",
+      "description": "Git: Y",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-12"
+      },
+      "keywords": [
+        "Tier 12",
+        "Project",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-94-ipd-meta-pro-link",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "ipd-meta-pro-link",
+      "identifier": "C:\\Projects\\",
+      "description": "Git: Y",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-12"
+      },
+      "keywords": [
+        "Tier 12",
+        "Project",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-95-ipd-qma-project",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "ipd_qma_project",
+      "identifier": "C:\\Projects\\",
+      "description": "Git: N",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-12"
+      },
+      "keywords": [
+        "Tier 12",
+        "Project",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-81-llm-meta-analysis",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "llm-meta-analysis",
+      "identifier": "C:\\Projects\\",
+      "description": "Git: Y",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-12"
+      },
+      "keywords": [
+        "Tier 12",
+        "Project",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-88-mafi",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "MAFI",
+      "identifier": "C:\\Projects\\",
+      "description": "Git: N",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-12"
+      },
+      "keywords": [
+        "Tier 12",
+        "Project",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-89-mafi-continuation",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "MAFI-Continuation",
+      "identifier": "C:\\Projects\\",
+      "description": "Git: N",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-12"
+      },
+      "keywords": [
+        "Tier 12",
+        "Project",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-90-maxent-reconstructor",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "maxent-reconstructor",
+      "identifier": "C:\\Projects\\",
+      "description": "Git: N",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-12"
+      },
+      "keywords": [
+        "Tier 12",
+        "Project",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-79-meta-epidemiology-bias-correction",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "meta-epidemiology-bias-correction",
+      "identifier": "C:\\Projects\\",
+      "description": "Git: Y (manuscript/)",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Paused",
+      "isPartOf": {
+        "@id": "#tier-tier-12"
+      },
+      "keywords": [
+        "Tier 12",
+        "Project",
+        "Paused"
+      ]
+    },
+    {
+      "@id": "#project-100-metafusion-lab",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "MetaFusion-Lab",
+      "identifier": "C:\\Projects\\",
+      "description": "Git: N",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-12"
+      },
+      "keywords": [
+        "Tier 12",
+        "Project",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-86-metanew",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "Metanew",
+      "identifier": "C:\\Projects\\",
+      "description": "Git: Y (paper/)",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-12"
+      },
+      "keywords": [
+        "Tier 12",
+        "Project",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-87-mlm501",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "MLM501",
+      "identifier": "C:\\Projects\\",
+      "description": "Git: Y",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-12"
+      },
+      "keywords": [
+        "Tier 12",
+        "Project",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-103-multipledatameta",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "Multipledatameta",
+      "identifier": "C:\\Projects\\",
+      "description": "Git: Y",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-12"
+      },
+      "keywords": [
+        "Tier 12",
+        "Project",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-96-prognostic-meta",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "prognostic-meta",
+      "identifier": "C:\\Projects\\",
+      "description": "Git: N",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-12"
+      },
+      "keywords": [
+        "Tier 12",
+        "Project",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-84-registry-first-rct-meta",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "registry_first_rct_meta",
+      "identifier": "C:\\Projects\\",
+      "description": "Git: N",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-12"
+      },
+      "keywords": [
+        "Tier 12",
+        "Project",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-99-surronma",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "surroNMA",
+      "identifier": "C:\\Projects\\",
+      "description": "Git: N",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-12"
+      },
+      "keywords": [
+        "Tier 12",
+        "Project",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-98-tower",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "tower",
+      "identifier": "C:\\Projects\\",
+      "description": "Git: N",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-12"
+      },
+      "keywords": [
+        "Tier 12",
+        "Project",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-13-dose-response-nma",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "Dose-Response NMA",
+      "identifier": "C:\\HTML apps\\nma-dose-response-app\\",
+      "description": "Lines: ~12K | Paper: F1000 done",
+      "additionalType": "HTML app",
+      "creativeWorkStatus": "Archived",
+      "isPartOf": {
+        "@id": "#tier-tier-2"
+      },
+      "keywords": [
+        "Tier 2",
+        "HTML app",
+        "Archived"
+      ]
+    },
+    {
+      "@id": "#project-10-dta-pro",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "DTA Pro",
+      "identifier": "C:\\HTML apps\\DTA_Pro_Review\\",
+      "description": "Lines: 54,000 | Tests: 27 R parity | Paper: F1000 done",
+      "additionalType": "HTML app",
+      "creativeWorkStatus": "Archived",
+      "isPartOf": {
+        "@id": "#tier-tier-2"
+      },
+      "keywords": [
+        "Tier 2",
+        "HTML app",
+        "Archived"
+      ]
+    },
+    {
+      "@id": "#project-11-hta-artifact-standard",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "HTA Artifact Standard",
+      "identifier": "C:\\HTML apps\\HTA\\",
+      "description": "Lines: 41 engines | Tests: 3,337 tests | Paper: F1000 updated",
+      "additionalType": "HTML app",
+      "creativeWorkStatus": "Shipped",
+      "isPartOf": {
+        "@id": "#tier-tier-2"
+      },
+      "keywords": [
+        "Tier 2",
+        "HTML app",
+        "Shipped"
+      ]
+    },
+    {
+      "@id": "#project-9-ipd-meta-pro",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "IPD-Meta-Pro",
+      "identifier": "C:\\HTML apps\\IPD-Meta-Pro\\",
+      "description": "Lines: 51,000 | Tests: 56 regression | Paper: F1000 done",
+      "additionalType": "HTML app",
+      "creativeWorkStatus": "Shipped",
+      "isPartOf": {
+        "@id": "#tier-tier-2"
+      },
+      "keywords": [
+        "Tier 2",
+        "HTML app",
+        "Shipped"
+      ]
+    },
+    {
+      "@id": "#project-15-living-meta",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "Living-Meta",
+      "identifier": "C:\\HTML apps\\living-meta\\",
+      "description": "Lines: ~8K files",
+      "additionalType": "HTML app",
+      "creativeWorkStatus": "Paused",
+      "isPartOf": {
+        "@id": "#tier-tier-2"
+      },
+      "keywords": [
+        "Tier 2",
+        "HTML app",
+        "Paused"
+      ]
+    },
+    {
+      "@id": "#project-12-nma-apps",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "NMA apps",
+      "identifier": "C:\\HTML apps\\NMAhtml\\",
+      "description": "Lines: 22 variants | Paper: F1000 done",
+      "additionalType": "HTML app",
+      "creativeWorkStatus": "Archived",
+      "isPartOf": {
+        "@id": "#tier-tier-2"
+      },
+      "keywords": [
+        "Tier 2",
+        "HTML app",
+        "Archived"
+      ]
+    },
+    {
+      "@id": "#project-14-pairwise-ai",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "Pairwise AI",
+      "identifier": "C:\\HTML apps\\Pairwiseai\\",
+      "description": "Lines: 13 variants",
+      "additionalType": "HTML app",
+      "creativeWorkStatus": "Archived",
+      "isPartOf": {
+        "@id": "#tier-tier-2"
+      },
+      "keywords": [
+        "Tier 2",
+        "HTML app",
+        "Archived"
+      ]
+    },
+    {
+      "@id": "#project-8-truthcert-pairwisepro",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "TruthCert PairwisePro",
+      "identifier": "C:\\HTML apps\\Truthcert1_work\\",
+      "description": "Lines: 27,901 | Tests: 101 Selenium | Paper: F1000 done",
+      "additionalType": "HTML app",
+      "creativeWorkStatus": "Maintained",
+      "isPartOf": {
+        "@id": "#tier-tier-2"
+      },
+      "keywords": [
+        "Tier 2",
+        "HTML app",
+        "Maintained"
+      ]
+    },
+    {
+      "@id": "#project-21-finrenone-rapidmeta",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "Finrenone RapidMeta",
+      "identifier": "C:\\Projects\\Finrenone\\",
+      "description": "Lines: ~120K (11 apps) | Tests: 36 tests",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Archived",
+      "isPartOf": {
+        "@id": "#tier-tier-3"
+      },
+      "keywords": [
+        "Tier 3",
+        "Project",
+        "Archived"
+      ]
+    },
+    {
+      "@id": "#project-16-metasprint-autopilot",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "MetaSprint Autopilot",
+      "identifier": "C:\\Projects\\metasprint-autopilot\\",
+      "description": "Lines: 30,700 | Tests: ~1,462 total | Paper: PLOS ONE v3",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Submission ready",
+      "isPartOf": {
+        "@id": "#tier-tier-3"
+      },
+      "keywords": [
+        "Tier 3",
+        "Project",
+        "Submission ready"
+      ]
+    },
+    {
+      "@id": "#project-20-metasprint-cardio-universe",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "MetaSprint Cardio Universe",
+      "identifier": "C:\\Projects\\metasprint-cardio-universe\\",
+      "description": "Indexed without an additional detail column.",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Active",
+      "isPartOf": {
+        "@id": "#tier-tier-3"
+      },
+      "keywords": [
+        "Tier 3",
+        "Project",
+        "Active"
+      ]
+    },
+    {
+      "@id": "#project-19-metasprint-dose-response",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "MetaSprint Dose-Response",
+      "identifier": "C:\\Projects\\metasprint-dose-response\\",
+      "description": "Lines: 25,975",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Shipped",
+      "isPartOf": {
+        "@id": "#tier-tier-3"
+      },
+      "keywords": [
+        "Tier 3",
+        "Project",
+        "Shipped"
+      ]
+    },
+    {
+      "@id": "#project-17-metasprint-dta",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "MetaSprint DTA",
+      "identifier": "C:\\Projects\\metasprint-dta\\",
+      "description": "Lines: 28,857 | Tests: ~857 total | Paper: F1000 done",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Submission ready",
+      "isPartOf": {
+        "@id": "#tier-tier-3"
+      },
+      "keywords": [
+        "Tier 3",
+        "Project",
+        "Submission ready"
+      ]
+    },
+    {
+      "@id": "#project-18-metasprint-nma",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "MetaSprint NMA",
+      "identifier": "C:\\Projects\\metasprintnma\\",
+      "description": "Lines: 31,499",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Shipped",
+      "isPartOf": {
+        "@id": "#tier-tier-3"
+      },
+      "keywords": [
+        "Tier 3",
+        "Project",
+        "Shipped"
+      ]
+    },
+    {
+      "@id": "#project-23-501mlm",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "501MLM",
+      "identifier": "C:\\Projects\\501MLM\\",
+      "description": "Indexed without an additional detail column.",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Shipped",
+      "isPartOf": {
+        "@id": "#tier-tier-4"
+      },
+      "keywords": [
+        "Tier 4",
+        "Project",
+        "Shipped"
+      ]
+    },
+    {
+      "@id": "#project-37b-501mlm-submission",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "501MLM_Submission",
+      "identifier": "C:\\Projects\\501MLM_Submission\\",
+      "description": "Paper: 18 refs, affiliations",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Submission ready",
+      "isPartOf": {
+        "@id": "#tier-tier-4"
+      },
+      "keywords": [
+        "Tier 4",
+        "Project",
+        "Submission ready"
+      ]
+    },
+    {
+      "@id": "#project-24-cres",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "CRES",
+      "identifier": "C:\\Models\\CRES\\",
+      "description": "Tests: 227 tests | Paper: PLOS ONE manuscript",
+      "additionalType": "Model",
+      "creativeWorkStatus": "Submission ready",
+      "isPartOf": {
+        "@id": "#tier-tier-4"
+      },
+      "keywords": [
+        "Tier 4",
+        "Model",
+        "Submission ready"
+      ]
+    },
+    {
+      "@id": "#project-28-grma",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "GRMA",
+      "identifier": "C:\\Models\\GRMA_paper\\",
+      "description": "Paper: PLOS ONE v10.0",
+      "additionalType": "Model",
+      "creativeWorkStatus": "Submission ready",
+      "isPartOf": {
+        "@id": "#tier-tier-4"
+      },
+      "keywords": [
+        "Tier 4",
+        "Model",
+        "Submission ready"
+      ]
+    },
+    {
+      "@id": "#project-26-gwam",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "GWAM",
+      "identifier": "C:\\Models\\GWAM\\",
+      "description": "Tests: 91 tests | Paper: Manuscript done",
+      "additionalType": "Model",
+      "creativeWorkStatus": "Submission ready",
+      "isPartOf": {
+        "@id": "#tier-tier-4"
+      },
+      "keywords": [
+        "Tier 4",
+        "Model",
+        "Submission ready"
+      ]
+    },
+    {
+      "@id": "#project-22-heterogeneityase",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "HeterogeneityASE",
+      "identifier": "C:\\Models\\New_Heterogeneity_Model\\",
+      "description": "Tests: 24 tests | Paper: F1000 draft",
+      "additionalType": "Model",
+      "creativeWorkStatus": "Submission ready",
+      "isPartOf": {
+        "@id": "#tier-tier-4"
+      },
+      "keywords": [
+        "Tier 4",
+        "Model",
+        "Submission ready"
+      ]
+    },
+    {
+      "@id": "#project-25-ipd-qma",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "IPD-QMA",
+      "identifier": "C:\\Models\\IPD_QMA\\",
+      "description": "Tests: 12 tests | Paper: PLOS ONE ACCEPT",
+      "additionalType": "Model",
+      "creativeWorkStatus": "Accepted",
+      "isPartOf": {
+        "@id": "#tier-tier-4"
+      },
+      "keywords": [
+        "Tier 4",
+        "Model",
+        "Accepted"
+      ]
+    },
+    {
+      "@id": "#project-37a-lfa-cbamm",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "LFA (cbamm)",
+      "identifier": "C:\\Projects\\LFA\\",
+      "description": "Paper: cbamm v0.1.0",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Shipped",
+      "isPartOf": {
+        "@id": "#tier-tier-4"
+      },
+      "keywords": [
+        "Tier 4",
+        "Project",
+        "Shipped"
+      ]
+    },
+    {
+      "@id": "#project-27-mem-meta-ecosystem",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "MEM (Meta Ecosystem)",
+      "identifier": "C:\\Models\\Meta_Ecosystem_Model\\",
+      "description": "Paper: PLOS ONE ready",
+      "additionalType": "Model",
+      "creativeWorkStatus": "Submission ready",
+      "isPartOf": {
+        "@id": "#tier-tier-4"
+      },
+      "keywords": [
+        "Tier 4",
+        "Model",
+        "Submission ready"
+      ]
+    },
+    {
+      "@id": "#project-30-metaoverfit",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "metaoverfit",
+      "identifier": "C:\\Projects\\metaoverfit\\",
+      "description": "Paper: Manuscript",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Submission ready",
+      "isPartOf": {
+        "@id": "#tier-tier-4"
+      },
+      "keywords": [
+        "Tier 4",
+        "Project",
+        "Submission ready"
+      ]
+    },
+    {
+      "@id": "#project-37c-metaoverfit-paper",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "metaoverfit-paper",
+      "identifier": "C:\\Projects\\metaoverfit-paper\\",
+      "description": "Paper: Companion paper",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Paused",
+      "isPartOf": {
+        "@id": "#tier-tier-4"
+      },
+      "keywords": [
+        "Tier 4",
+        "Project",
+        "Paused"
+      ]
+    },
+    {
+      "@id": "#project-33-metaverse-robust-ma",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "metaverse-robust-MA",
+      "identifier": "C:\\Projects\\metaverse-robust-MA\\",
+      "description": "Indexed without an additional detail column.",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Shipped",
+      "isPartOf": {
+        "@id": "#tier-tier-4"
+      },
+      "keywords": [
+        "Tier 4",
+        "Project",
+        "Shipped"
+      ]
+    },
+    {
+      "@id": "#project-34-mlmresearch",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "MLMResearch",
+      "identifier": "C:\\Projects\\MLMResearch\\",
+      "description": "Indexed without an additional detail column.",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Shipped",
+      "isPartOf": {
+        "@id": "#tier-tier-4"
+      },
+      "keywords": [
+        "Tier 4",
+        "Project",
+        "Shipped"
+      ]
+    },
+    {
+      "@id": "#project-35-paper1-cbamm",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "Paper1 (cbamm)",
+      "identifier": "C:\\Projects\\Paper1\\",
+      "description": "Paper: R CMD check PASS",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Paused",
+      "isPartOf": {
+        "@id": "#tier-tier-4"
+      },
+      "keywords": [
+        "Tier 4",
+        "Project",
+        "Paused"
+      ]
+    },
+    {
+      "@id": "#project-36-paper2",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "Paper2",
+      "identifier": "C:\\Projects\\Paper2.111025\\",
+      "description": "Indexed without an additional detail column.",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Paused",
+      "isPartOf": {
+        "@id": "#tier-tier-4"
+      },
+      "keywords": [
+        "Tier 4",
+        "Project",
+        "Paused"
+      ]
+    },
+    {
+      "@id": "#project-31-pub-bias-simulation",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "pub-bias-simulation",
+      "identifier": "C:\\Projects\\pub-bias-simulation\\",
+      "description": "Paper: Manuscript.Rmd",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Paused",
+      "isPartOf": {
+        "@id": "#tier-tier-4"
+      },
+      "keywords": [
+        "Tier 4",
+        "Project",
+        "Paused"
+      ]
+    },
+    {
+      "@id": "#project-32-rmstnma",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "rmstnma",
+      "identifier": "C:\\Projects\\rmstnma\\",
+      "description": "Paper: Manuscript.Rmd",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Paused",
+      "isPartOf": {
+        "@id": "#tier-tier-4"
+      },
+      "keywords": [
+        "Tier 4",
+        "Project",
+        "Paused"
+      ]
+    },
+    {
+      "@id": "#project-29-synthesis-fatiha",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "SYNTHESIS (FATIHA)",
+      "identifier": "C:\\Models\\FATIHA_Project\\",
+      "description": "Tests: 82 tests",
+      "additionalType": "Model",
+      "creativeWorkStatus": "Submission ready",
+      "isPartOf": {
+        "@id": "#tier-tier-4"
+      },
+      "keywords": [
+        "Tier 4",
+        "Model",
+        "Submission ready"
+      ]
+    },
+    {
+      "@id": "#project-106-ubcma",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "UBCMA",
+      "identifier": "C:\\ubcma\\",
+      "description": "Tests: 9 tests | Paper: Python pkg, bias-calibrated MA",
+      "additionalType": "Root-level project",
+      "creativeWorkStatus": "Active",
+      "isPartOf": {
+        "@id": "#tier-tier-4"
+      },
+      "keywords": [
+        "Tier 4",
+        "Root-level project",
+        "Active"
+      ]
+    },
+    {
+      "@id": "#project-37-wasserstein",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "wasserstein",
+      "identifier": "C:\\Projects\\wasserstein\\",
+      "description": "Paper: v1.4, 36/40 CI",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Shipped",
+      "isPartOf": {
+        "@id": "#tier-tier-4"
+      },
+      "keywords": [
+        "Tier 4",
+        "Project",
+        "Shipped"
+      ]
+    },
+    {
+      "@id": "#project-39-causalsynth",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "CausalSynth",
+      "identifier": "C:\\Models\\CausalSynth\\",
+      "description": "Paper: F1000 ready | Last Commit: 2026-03-24",
+      "additionalType": "Model",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-5"
+      },
+      "keywords": [
+        "Tier 5",
+        "Model",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-40d-evidencegapmap",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "EvidenceGapMap",
+      "identifier": "C:\\EvidenceGapMap\\",
+      "description": "Paper: paper/ dir",
+      "additionalType": "Root-level project",
+      "creativeWorkStatus": "Paused",
+      "isPartOf": {
+        "@id": "#tier-tier-5"
+      },
+      "keywords": [
+        "Tier 5",
+        "Root-level project",
+        "Paused"
+      ]
+    },
+    {
+      "@id": "#project-40-mapriors",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "MAPriors",
+      "identifier": "C:\\Models\\MAPriors\\",
+      "description": "Paper: F1000 ready | Last Commit: 2026-03-24",
+      "additionalType": "Model",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-5"
+      },
+      "keywords": [
+        "Tier 5",
+        "Model",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-38-multiversema",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "MultiverseMA",
+      "identifier": "C:\\Models\\MultiverseMA\\",
+      "description": "Paper: F1000 ready | Last Commit: 2026-03-24",
+      "additionalType": "Model",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-5"
+      },
+      "keywords": [
+        "Tier 5",
+        "Model",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-40a-outcomereportingbias",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "OutcomeReportingBias",
+      "identifier": "C:\\OutcomeReportingBias\\",
+      "description": "Paper: RSM 233L + 3 figs + tests | Last Commit: 2026-03-25",
+      "additionalType": "Root-level project",
+      "creativeWorkStatus": "Submission ready",
+      "isPartOf": {
+        "@id": "#tier-tier-5"
+      },
+      "keywords": [
+        "Tier 5",
+        "Root-level project",
+        "Submission ready"
+      ]
+    },
+    {
+      "@id": "#project-40b-overlapdetector",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "OverlapDetector",
+      "identifier": "C:\\OverlapDetector\\",
+      "description": "Paper: RSM 190L + 3 figs + 18 tests | Last Commit: 2026-03-25",
+      "additionalType": "Root-level project",
+      "creativeWorkStatus": "Submission ready",
+      "isPartOf": {
+        "@id": "#tier-tier-5"
+      },
+      "keywords": [
+        "Tier 5",
+        "Root-level project",
+        "Submission ready"
+      ]
+    },
+    {
+      "@id": "#project-40c-predictiongap",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "PredictionGap",
+      "identifier": "C:\\PredictionGap\\",
+      "description": "Paper: BMJ 140L + dashboard + 21 tests + R-validated | Last Commit: 2026-03-25",
+      "additionalType": "Root-level project",
+      "creativeWorkStatus": "Submission ready",
+      "isPartOf": {
+        "@id": "#tier-tier-5"
+      },
+      "keywords": [
+        "Tier 5",
+        "Root-level project",
+        "Submission ready"
+      ]
+    },
+    {
+      "@id": "#project-43-cochranedataextractor",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "CochraneDataExtractor",
+      "identifier": "C:\\Projects\\CochraneDataExtractor\\",
+      "description": "Indexed without an additional detail column.",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-6"
+      },
+      "keywords": [
+        "Tier 6",
+        "Project",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-44-dataextractor",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "Dataextractor",
+      "identifier": "C:\\Projects\\Dataextractor\\",
+      "description": "Indexed without an additional detail column.",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-6"
+      },
+      "keywords": [
+        "Tier 6",
+        "Project",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-48-dta70",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "DTA70",
+      "identifier": "C:\\Projects\\DTA70\\",
+      "description": "Indexed without an additional detail column.",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-6"
+      },
+      "keywords": [
+        "Tier 6",
+        "Project",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-45-kmcurve",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "KMcurve",
+      "identifier": "C:\\Projects\\KMcurve\\",
+      "description": "Indexed without an additional detail column.",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-6"
+      },
+      "keywords": [
+        "Tier 6",
+        "Project",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-42-pairwise70",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "Pairwise70",
+      "identifier": "C:\\Models\\Pairwise70\\",
+      "description": "Indexed without an additional detail column.",
+      "additionalType": "Model",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-6"
+      },
+      "keywords": [
+        "Tier 6",
+        "Model",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-41-rct-extractor-v2",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "RCT Extractor v2",
+      "identifier": "C:\\Projects\\rct-extractor-v2\\",
+      "description": "Indexed without an additional detail column.",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-6"
+      },
+      "keywords": [
+        "Tier 6",
+        "Project",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-46-repo100",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "repo100",
+      "identifier": "C:\\Projects\\repo100\\",
+      "description": "Indexed without an additional detail column.",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-6"
+      },
+      "keywords": [
+        "Tier 6",
+        "Project",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-47-repo300-enma-snma",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "repo300-ENMA-SNMA",
+      "identifier": "C:\\Projects\\repo300-ENMA-SNMA\\",
+      "description": "Indexed without an additional detail column.",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-6"
+      },
+      "keywords": [
+        "Tier 6",
+        "Project",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-54-autograde",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "AutoGRADE",
+      "identifier": "C:\\Projects\\AutoGRADE\\",
+      "description": "Indexed without an additional detail column.",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Shipped",
+      "isPartOf": {
+        "@id": "#tier-tier-7"
+      },
+      "keywords": [
+        "Tier 7",
+        "Project",
+        "Shipped"
+      ]
+    },
+    {
+      "@id": "#project-49-hta-evidence-integrity",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "HTA Evidence Integrity",
+      "identifier": "C:\\Models\\HTA_Evidence_Integrity_Suite\\",
+      "description": "Paper: Manuscript done",
+      "additionalType": "Model",
+      "creativeWorkStatus": "Submission ready",
+      "isPartOf": {
+        "@id": "#tier-tier-7"
+      },
+      "keywords": [
+        "Tier 7",
+        "Model",
+        "Submission ready"
+      ]
+    },
+    {
+      "@id": "#project-53-hta-oman",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "HTA Oman",
+      "identifier": "C:\\Projects\\HTA-oman\\",
+      "description": "Indexed without an additional detail column.",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Paused",
+      "isPartOf": {
+        "@id": "#tier-tier-7"
+      },
+      "keywords": [
+        "Tier 7",
+        "Project",
+        "Paused"
+      ]
+    },
+    {
+      "@id": "#project-50-hta-transportability",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "HTA Transportability",
+      "identifier": "C:\\Models\\HTA_Transportability_Engine\\",
+      "description": "Paper: Manuscript done",
+      "additionalType": "Model",
+      "creativeWorkStatus": "Submission ready",
+      "isPartOf": {
+        "@id": "#tier-tier-7"
+      },
+      "keywords": [
+        "Tier 7",
+        "Model",
+        "Submission ready"
+      ]
+    },
+    {
+      "@id": "#project-52-hta-unified-intel",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "HTA Unified Intel",
+      "identifier": "C:\\Models\\HTA_Unified_Intelligence_System\\",
+      "description": "Indexed without an additional detail column.",
+      "additionalType": "Model",
+      "creativeWorkStatus": "Paused",
+      "isPartOf": {
+        "@id": "#tier-tier-7"
+      },
+      "keywords": [
+        "Tier 7",
+        "Model",
+        "Paused"
+      ]
+    },
+    {
+      "@id": "#project-51-value-based-hta",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "Value-Based HTA",
+      "identifier": "C:\\Models\\Value_Based_HTA_Engine\\",
+      "description": "Paper: Manuscript done",
+      "additionalType": "Model",
+      "creativeWorkStatus": "Submission ready",
+      "isPartOf": {
+        "@id": "#tier-tier-7"
+      },
+      "keywords": [
+        "Tier 7",
+        "Model",
+        "Submission ready"
+      ]
+    },
+    {
+      "@id": "#project-56-fatiha-course",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "Fatiha Course",
+      "identifier": "C:\\Projects\\Fatiha-Course\\",
+      "description": "Indexed without an additional detail column.",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-8"
+      },
+      "keywords": [
+        "Tier 8",
+        "Project",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-57-fatiha-course-v2",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "Fatiha Course v2",
+      "identifier": "C:\\Projects\\Fatiha-course-github-v2\\",
+      "description": "Indexed without an additional detail column.",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-8"
+      },
+      "keywords": [
+        "Tier 8",
+        "Project",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-55-synthesis-course",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "Synthesis Course",
+      "identifier": "(in HTML apps or user home)",
+      "description": "Indexed without an additional detail column.",
+      "additionalType": "Course material",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-8"
+      },
+      "keywords": [
+        "Tier 8",
+        "Course material",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-59-burhan",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "Burhan",
+      "identifier": "C:\\Projects\\Burhan\\",
+      "description": "Indexed without an additional detail column.",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-9"
+      },
+      "keywords": [
+        "Tier 9",
+        "Project",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-60-ipd-zahid",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "IPD Zahid",
+      "identifier": "C:\\Projects\\IPD Zahid\\",
+      "description": "Indexed without an additional detail column.",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-9"
+      },
+      "keywords": [
+        "Tier 9",
+        "Project",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-58-shahzaib-icu",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "Shahzaib ICU",
+      "identifier": "C:\\Models\\shahzaib-icu-landscape\\",
+      "description": "Indexed without an additional detail column.",
+      "additionalType": "Model",
+      "creativeWorkStatus": "Submission ready",
+      "isPartOf": {
+        "@id": "#tier-tier-9"
+      },
+      "keywords": [
+        "Tier 9",
+        "Model",
+        "Submission ready"
+      ]
+    },
+    {
+      "@id": "#project-61-worldipd",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "WorldIPD",
+      "identifier": "C:\\Projects\\WorldIPD\\",
+      "description": "Indexed without an additional detail column.",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-9"
+      },
+      "keywords": [
+        "Tier 9",
+        "Project",
+        "Needs triage"
+      ]
+    },
+    {
+      "@id": "#project-62-worldipd-private",
+      "@type": [
+        "SoftwareSourceCode",
+        "CreativeWork"
+      ],
+      "name": "WorldIPD-private",
+      "identifier": "C:\\Projects\\WorldIPD-private\\",
+      "description": "Indexed without an additional detail column.",
+      "additionalType": "Project",
+      "creativeWorkStatus": "Needs triage",
+      "isPartOf": {
+        "@id": "#tier-tier-9"
+      },
+      "keywords": [
+        "Tier 9",
+        "Project",
+        "Needs triage"
+      ]
+    }
+  ]
+}

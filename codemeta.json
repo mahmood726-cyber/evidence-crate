@@ -1,0 +1,35 @@
+{
+  "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+  "@type": "SoftwareSourceCode",
+  "name": "EvidenceCrate",
+  "description": "Static packaging project that transforms a bundled ResearchConstellation snapshot into RO-Crate style metadata, a CodeMeta record, and a browser dashboard.",
+  "author": {
+    "@type": "Person",
+    "givenName": "Mahmood",
+    "familyName": "Ahmad"
+  },
+  "dateCreated": "2026-03-29",
+  "programmingLanguage": [
+    "Python",
+    "HTML",
+    "CSS",
+    "JavaScript"
+  ],
+  "applicationCategory": "Research",
+  "keywords": [
+    "RO-Crate",
+    "CodeMeta",
+    "portfolio metadata",
+    "evidence synthesis",
+    "GitHub Pages"
+  ],
+  "softwareRequirements": [
+    "Python 3.11+",
+    "Static browser host"
+  ],
+  "developmentStatus": "active",
+  "version": "0.1.0",
+  "runtimePlatform": "Any browser for dashboard; Python for rebuilds",
+  "readme": "README.md",
+  "identifier": "tracked-projects:134"
+}
