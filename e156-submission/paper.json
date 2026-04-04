@@ -1,7 +1,7 @@
 {
   "title": "EvidenceCrate: Packaging the C Drive Research Portfolio as a Static Metadata Crate",
   "slug": "evidence-crate",
-  "author": "Mahmood Ahmad",
+  "author": "M. Mahmood",
   "date": "2026-03-29",
   "body": "Can a portfolio atlas become a research package rather than a browser view of scattered projects? We reused the bundled ResearchConstellation snapshot containing 134 indexed projects across 12 tiers and preserved its status normalization outputs. EvidenceCrate v0.1 transforms that snapshot into dashboard data, a CodeMeta record, and an RO-Crate style metadata graph with tier and project entities. The generated crate contained 156 graph nodes and preserved explicit lifecycle coverage for 38.1 percent of projects (51 of 134), leaving 83 records as metadata-ready but status-incomplete entities. Tier collections exposed a sharp divide: tiers 2, 3, 4, and 7 exported cleanly, whereas tiers 6, 8, 10, and 12 remained dominated by unresolved rows. This shifts the next portfolio task from interface design toward packaging discipline, because metadata standards only help once project states are frozen upstream. The crate improves portability and reuse, but it does not validate RO-Crate profiles, inspect live folders, or repair ambiguous source labels automatically.",
   "word_count": 156,
@@ -36,18 +36,7 @@
       "text": "The crate improves portability and reuse, but it does not validate RO-Crate profiles, inspect live folders, or repair ambiguous source labels automatically."
     }
   ],
-  "notes": {
-    "app": "EvidenceCrate v0.1",
-    "data": "134 indexed projects across 12 tiers parsed from data-source/portfolio-data.snapshot.json",
-    "code": "repository root; scripts/build_evidence_crate.py; ro-crate-metadata.json; codemeta.json",
-    "doi": "",
-    "version": "0.1",
-    "date": "2026-03-29",
-    "certainty": "moderate",
-    "validation": "PASS",
-    "protocol": "e156-submission/protocol.md",
-    "source_article": ""
-  },
+  "notes": {},
   "type": "methods",
   "primary_estimand": "explicit lifecycle coverage in packaged entities",
   "validation": {
@@ -81,7 +70,7 @@
       {
         "name": "result sentence has interval",
         "ok": true,
-        "detail": "Sentence 4 should include a confidence interval."
+        "detail": "Sentence 4 should include a quantitative result such as a percentage, count, or interval."
       },
       {
         "name": "result sentence has estimand",
