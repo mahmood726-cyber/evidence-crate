@@ -37,5 +37,9 @@
       "role": "Boundary",
       "text": "The crate improves portability and reuse, but it does not validate RO-Crate profiles, inspect live folders, or repair ambiguous source labels automatically."
     }
-  ]
+  ],
+  "author": "Mahmood Ahmad",
+  "affiliation": "Tahir Heart Institute",
+  "email": "mahmood.ahmad2@nhs.net",
+  "submitted": false
 }
