@@ -34,11 +34,11 @@ EvidenceCrate addresses that gap by bundling the snapshot locally and exporting:
 
 Run:
 
-`python C:\Users\user\EvidenceCrate\scripts\build_evidence_crate.py`
+`python scripts/build_evidence_crate.py`
 
 For a custom source file:
 
-`python C:\Users\user\EvidenceCrate\scripts\build_evidence_crate.py --source path\to\portfolio-data.json`
+`python scripts/build_evidence_crate.py --source path/to/portfolio-data.json`
 
 ## Standards basis
 
