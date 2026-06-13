@@ -151,7 +151,6 @@ def build_ro_crate(payload: dict[str, object]) -> dict[str, object]:
             }
         )
 
-    graph[1]["hasPart"] = [item for item in file_entities for _ in ()]
     graph[1]["hasPart"] = [{"@id": path} for path, *_rest in file_entities] + tier_ids + project_ids
     graph[1]["variableMeasured"] = [
         "trackedProjects",
